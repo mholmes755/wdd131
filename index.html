@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Main Page">
+    <meta author="Michael Holmes WDD131">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131 - Dynamic Web Fundamentals - Michael Holmes</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <strong>Michael Holmes</strong></h1>
+        <nav>
+            <ul>
+                <a href="https://www.linkedin.com/feed/" target="_blank">My LinkdIn</a> <!--- Use personal LinkdIn account site --->
+                <a href="https://student.byui.edu/ICS/My_Pages/">My I-Learn</a> <!--- Use personal I-Learn Page --->
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/26?lang=eng&id=p23-p24#p23">Favorite Scripture</a><!--- Use link to lds site --->
+                <a href="#">Final Project</a> 
+            </ul>
+        </nav>
+    </header>
+    
+    <main> 
+
+        <section class="card">
+            <h2><strong>About Me</strong></h2>
+            <div id="card1Section1">
+                <p>
+                   My name is Michael! I grew up in North Carolina and Virginia,
+                    but I currently live with my wife in Idaho. I'm currently studying
+                    software developement and work as an express writer at a GM car
+                    dealership. I love reading, hiking, making things with my hands,
+                    and sports! Whether it's Brazillian Jiu Jitsu, Football, or Pickelball,
+                    I love to compete!
+                </p>
+                <img id="aboutMe" src="images/aboutMe.webp" alt="Picture of Michael Holmes" width="" height="">
+            </div>
+            <hr>
+            <h3 style="text-align: center;">Hobbies</h3>
+            <div id="card1Section2">
+                <section>
+                    <h4>Reading</h4>
+                    <p>I like anything fantasy! I love the fuedal era
+                        and the stories associated with that period of
+                        history. Within a good story for me is a power
+                        struggle of good and evil, because every struggle 
+                        like that is symbolic of the war between Jesus Christ
+                        and Satan. Good stories are good when they reveal a portion
+                        of revealed truth.
+                    </p>
+                </section>
+                <section>
+                    <h4>Hiking</h4>
+                    <p>I love hiking at any time during the year. Whether it's
+                        snowing in Winter, leaves are falling during a crisp Fall,
+                        or the sun is beating down in Summer. If I'm hking with
+                        people that I love, it's always a good time. I especially
+                        love small sections where you have to climb a little. It makes
+                        it seem like more of an adventure!
+                    </p>
+                </section>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2><strong>Web Dev Resources</strong></h2>
+            <div id="card2Section1">
+                <ul>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a></li>
+                    <li><a href="https://validator.w3.org/">HTML Validator</a></li>
+                    <li><a href="https://pixlr.com/express/">Image Optimizer</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; <span id="copyrightYear"></span> | Michael Holmes</p>
+        <p>United States of America</p>
+        <p id="lastModified"></p>
+
+
+    </footer>
+
+</body>
+</html>
