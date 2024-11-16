@@ -46,6 +46,7 @@
         grid-template-columns: 1fr 1fr;
         max-width: 1600px;
         justify-content: center;
+        margin: 0px 20px;
     }
 
 
