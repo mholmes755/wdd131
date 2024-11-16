@@ -1,6 +1,7 @@
     body{
         background-color: wheat;
         margin: 0;
+        font-family: "Playfair-Design", serif;
     }
     header{
         display: grid;
@@ -64,7 +65,7 @@
     main{
         display: grid;
         grid-template-columns: 1fr;
-        max-width: 1600;
+        max-width: 1600px;
         justify-content: center;
     }
 
