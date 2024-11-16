@@ -1,0 +1,78 @@
+    body{
+        background-color: wheat;
+        margin: 0;
+    }
+    header{
+        display: grid;
+        grid-template-columns: auto;
+        background-color: rgb(9, 83, 41);
+        min-height: 80px;
+        align-items: center;
+    }
+
+    header h1{
+        color: wheat;
+        text-align: center;
+        border-bottom: 2px solid black;
+
+    }
+
+    #menu{
+        font-size: 1.5rem;
+        border: 0;
+        padding: 2px;
+        background: none;
+        position: relative;
+        top: 1px;
+
+    }
+
+    #menu::before{
+        content: '☰ Menu';
+        color: wheat;
+        font-weight: bold;
+    }
+    #menu.open::before{
+        content: 'X';
+        color: wheat;
+        font-weight: bold;
+    }
+
+    #navigation.open ul{
+        display: block;
+    }
+
+    nav ul{
+        display: none;
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+    nav ul a{
+        text-decoration: none;
+        color: wheat;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    nav ul a:hover{
+        color: rgba(245, 222, 179, .5);
+        font-size: 30px;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 1600;
+        justify-content: center;
+    }
+
+
+    footer{
+        background-color: rgb(9, 83, 41);
+        color: wheat;
+        display: block;
+        text-align: center;
+
+    }

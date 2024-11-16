@@ -1,0 +1,60 @@
+@media  screen and (min-width: 40rem){
+
+    body{
+        background-color: wheat;
+        margin: 0;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(9, 83, 41);
+        min-height: 80px;
+        align-items: center;
+    }
+
+    header h1{
+        color: wheat;
+        margin-left: 0px;
+        border-bottom: none;
+
+    }
+
+    #navigation ul{
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+    nav ul a{
+        text-decoration: none;
+        color: wheat;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    nav ul a:hover{
+        color: rgba(245, 222, 179, .5);
+        font-size: 30px;
+    }
+    #menu{
+        display: none;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1600;
+        justify-content: center;
+    }
+
+
+    footer{
+        background-color: rgb(9, 83, 41);
+        color: wheat;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+}
