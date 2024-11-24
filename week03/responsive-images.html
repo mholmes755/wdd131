@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/design.css">
+    <title>Responsive Images</title>
+</head>
+<body>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/richmond-temple.webp" width="1500px" height="750px">
+                <source media="(min-width: 500px)" srcset="images/richmond-temple-medium.webp" width="1000px" height="500px">
+                <img src="images/richmond-temple-small.webp" alt="Richmond Temple" width="500px" height="250px">
+            </picture>
+        </div>
+    </main>
+    
+</body>
+</html>

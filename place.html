@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael Holmes">
+    <meta name="description" content="Page about location">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <title>Place</title>
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+
+    <main>
+        <picture id="heroImg">
+            <source srcset="images/japan-small.webp" media= "(max-width: 400px)">
+            <source srcset= "images/japan-medium.webp" media= "(max-width: 960)">
+            <img src="images/japan.webp" alt="Landscape of Japan" >
+            <!-- images needs to be resized THEN made webp's width="1518" height="750" -->
+        </picture>
+        <div id="data">
+            <h2>Data</h2>
+            <p><strong>Area: 378,000 Square Kilometers</strong></p>
+            <p><strong>Population: 123,753,041 people</strong></p>
+            <p><strong>Capital: Tokyo</strong></p>
+            <p><strong>Languages: Japanese, Ryukyuan, and Ainu</strong></p>
+            <p><strong>Currency: Japanese Yen</strong></p>
+            <p><strong>Time Zone: JST UTC+9</strong></p>
+            <p><strong>Calling Code: +81</strong></p>
+            <p><strong>Internet TLD: .jp</strong></p>
+        </div>
+
+        <div id="weather">
+            <h2>Weather</h2>
+            <img id="weatherIcon" src="images/weatherIcon.svg" alt="Weather Icon">
+            <p id="temp"></p>
+            <p><strong>Conditions: Overcast Clouds</strong></p>
+            <p id="windSpeed"></p>
+            <p id="windChill"></p>
+        </div>
+    </main>
+
+    <footer>
+
+        <p>&copy; <span id="copyrightYear"></span> | Michael Holmes | Japan</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
