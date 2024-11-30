@@ -1,0 +1,106 @@
+body{
+    background-color: white;
+    margin: 0;
+    font-family: "Playfair-Design", serif;
+}
+header{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgb(9, 83, 41);
+    min-height: 80px;
+    align-items: center;
+}
+
+header h1{
+    color: wheat;
+    text-align: center;
+    border-bottom: 2px solid black;
+
+}
+
+#menu{
+    font-size: 1.5rem;
+    border: 0;
+    padding: 2px;
+    background: none;
+    position: relative;
+    top: 1px;
+
+}
+
+#menu::before{
+    content: '☰ Menu';
+    color: wheat;
+    font-weight: bold;
+}
+#menu.open::before{
+    content: 'X';
+    color: wheat;
+    font-weight: bold;
+}
+
+#navigation.open ul{
+    display: block;
+}
+
+nav ul{
+    display: none;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav ul a{
+    text-decoration: none;
+    color: wheat;
+    font-weight: bold;
+    font-size: 25px;
+}
+nav ul a:hover{
+    color: rgba(245, 222, 179, .5);
+    font-size: 30px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1600px;
+    justify-content: center;
+}
+
+
+#templeCards{
+    display: grid;
+    grid-template-columns: 1fr;;
+}
+.temple-card{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid black ;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: rgb(204, 211, 207);
+    margin: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 30px rgb(138, 134, 134);
+    border-radius: 2%;
+
+
+}
+img{
+    width: 200px;
+    height: 125px;
+    box-shadow: 1px 1px 30px rgb(138, 134, 134);
+
+}
+
+
+
+footer{
+    background-color: rgb(9, 83, 41);
+    color: wheat;
+    display: block;
+    text-align: center;
+
+}
