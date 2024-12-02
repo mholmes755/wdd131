@@ -63,12 +63,15 @@ nav ul a:hover{
 }
 
 main{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
     max-width: 1600px;
     justify-content: center;
 }
 
+#main-header{
+    text-align: center;
+    text-decoration: underline;
+}
 
 #templeCards{
     display: grid;
@@ -85,14 +88,17 @@ main{
     text-align: center;
     box-shadow: 1px 1px 30px rgb(138, 134, 134);
     border-radius: 2%;
+    justify-content: center;
 
 
 }
 img{
+    display: block;
+    border: 2px solid black;
+    box-sizing: border-box;
     width: 200px;
     height: 125px;
     box-shadow: 1px 1px 30px rgb(138, 134, 134);
-
 }
 
 

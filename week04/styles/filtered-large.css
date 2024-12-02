@@ -3,6 +3,8 @@
     body{
         background-color: white;
         margin: 0;
+        justify-content: center;
+        align-items: center;
     }
     header{
         display: grid;
@@ -16,7 +18,11 @@
         color: wheat;
         margin-left: 0px;
         border-bottom: none;
+    }
 
+    #main-header{
+        text-align: center;
+        text-decoration: underline;
     }
 
     #navigation ul{
@@ -42,18 +48,22 @@
     }
 
     main{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-gap: 20px;
         max-width: 1600px;
         justify-content: center;
         margin: 0px 20px;
+        box-sizing: border-box;
     }
 
 
 
     #templeCards{
         display: grid;
-        grid-template-columns: 1fr 1fr;;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-content: center;
     }
     .temple-card{
         display: grid;

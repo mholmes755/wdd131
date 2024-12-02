@@ -17,7 +17,7 @@ const lastModifText = 'Last Modified: ' + lastModif;
 document.getElementById('lastModified').textContent = lastModifText;
 
 
-// Generate images
+// Temple Info
 
 const temples = [
     {
@@ -103,6 +103,7 @@ const temples = [
   ];
 
 
+  // Generate Temple Cards
   function buildTemples(temples){
     const container = document.getElementById('templeCards');
     const html = temples.map(
@@ -127,4 +128,93 @@ const temples = [
   buildTemples(temples);
 
 
+
+// Responsive Hamburger Menu
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('#navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
+
+
+// Change display based on selected Nav item
+function filteredTemples(criteria){
+    let filteredTemples;
+
+    if (criteria ==="old"){
+        filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1950);
+
+    }
+    else if (criteria ==="new"){
+        filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() >= 1950);
+
+    }
+    else if(criteria ==="large"){
+        filteredTemples = temples.filter(temple => temple.area > 15000);
+    
+    }
+     else if (criteria ==="small"){
+        filteredTemples = temples.filter(temple => temple.area <= 15000);
+
+    }
+    else {
+        filteredTemples = temples;
+    }
+    buildTemples(filteredTemples);
+}
+
+
+
+function updateHeader(criteria){
+  const header = document.getElementById("main-header");
+
+  let headerText;
+
+  switch(criteria){
+    case "old":
+      headerText = "Temples dedicated before 1950";
+      break;
+
+    case "new":
+      headerText = "Temples dedicated after 1950";
+      break;
+
+    case "large":
+      headerText = "Temples with an area over 15,000 Sq. Ft.";
+      break;
+
+    case "small":
+      headerText = "Temples with an area less than 15,000 Sq Ft.";
+      break;
+    
+    default:
+      headerText = "Home"
+  }
+  header.textContent = headerText;
+}
+
+
+// Add event listeners for nav for the above code segments above^^ 
+
+document.getElementById("home").addEventListener('click', () =>{
+  filteredTemples(""),
+  updateHeader("")});
+
+document.getElementById("old").addEventListener('click', () =>{
+  filteredTemples("old"),
+  updateHeader("old")});
+
+document.getElementById("new").addEventListener('click', () =>{
+  filteredTemples("new"),
+  updateHeader("new")});
+
+document.getElementById("large").addEventListener('click', () =>{
+  filteredTemples("large"),
+  updateHeader("large")});
+
+document.getElementById("small").addEventListener('click', () =>{
+  filteredTemples("small"),
+  updateHeader("small")});
 
