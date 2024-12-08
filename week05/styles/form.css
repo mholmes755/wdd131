@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    background-color: white;
+}
+
+.pr{
+    background-color: lightgray;
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+}
+fieldset{
+    width: 100%;
+    max-width: 400px;
+    border: none;
+
+}
+#productName{
+    margin-bottom: 0;
+}
+
+.optional{
+    color: darkblue;
+}
+.pr .checkbox{
+    display: block;
+}
+.pr #check{
+    font-style: italic;
+}
+
+.pr input[type="date"],
+.pr select{
+    width: 50%;
+    max-width: 200px;
+}
+
+.pr #writtenReview{
+    height: 200px;
+    width: 75%;
+}
+.pr input[type="text"]{
+    width: 75%;
+    margin-left: 0%;
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+header, footer{
+    background-color: rgb(51, 13, 51);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pr input[type="submit"]{
+    width: 77%;
+    margin-left: 0%;
+    color: white;
+    background-image: linear-gradient(lightgray, rgba(51, 13, 51, 0.568), rgb(51, 13, 51));
+}

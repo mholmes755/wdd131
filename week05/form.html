@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <title>Product Review</title>
+</head>
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <form class="pr" action="review.html">
+        <fieldset>
+            
+            <section>
+                <label>
+                    <p id="productName">Product Name</p>
+                    <select name="Product" id="productSelect" required>
+                        <option value="product">Select a Product</option>
+                    </select>    
+                </label>
+            </section>       
+        
+            <section class="stars">
+            <legend>Overall Rating</legend>
+            <label class="radio">&star;<input type="radio" name="rating" value="1 star" required></label>
+            <label class="radio">&star;&star;<input type="radio" name="rating" value="2 stars" required></label>
+            <label class="radio">&star;&star;&star;<input type="radio" name="rating" value="3 stars" required></label>
+            <label class="radio">&star;&star;&star;&star;<input type="radio" name="rating" value="4 stars" required></label>
+            <label class="radio">&star;&star;&star;&star;&star;<input type="radio" name="rating" value="5 stars" required></label>
+            </section>
+            
+            <section>
+            <legend>Date of Installation</legend>
+            <label><input id="installDate" type="date" name="date" required></label>
+            </section>
+
+            <section>
+            <legend>What feature did you find useful in the product?</legend>
+            <legend id="check">(Check all that apply)</legend>
+            <label class="checkbox"><input id="durability" type="checkbox" name="durability" value="yes">Durability</label>
+            <label class="checkbox"><input id="easeOfUse" type="checkbox" name="Ease" value="yes">Ease of Use</label>
+            <label class="checkbox"><input id="performance" type="checkbox" name="performance" value="yes">Performance</label>
+            <label class="checkbox"><input id="design" type="checkbox" name="design" value="yes">Design</label>
+
+            </section>
+
+            <section>
+            <legend>Written Review <span class="optional">(Optional)</span></legend>
+            <label><input id="writtenReview" type="textarea" name="review"></label>
+            </section>
+
+            <section>
+            <legend>Your Name <span class="optional">(Optional)</span></legend>
+            <label><input id="name" type="text" name="fname"></label>
+            </section>
+            <input id="submitButton" type="submit" value="Post Review">
+
+        </fieldset>
+
+
+    </form>
+    
+
+    <footer>
+
+        <p>&copy; <span id="copyrightYear"></span> | Michael Holmes</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>
