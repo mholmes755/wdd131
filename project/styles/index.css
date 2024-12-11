@@ -1,0 +1,112 @@
+
+
+/* |||||||| HOME PAGE CSS ||||||||  */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu:wght@700&display=swap');
+
+body{
+    background-color: #F5DFBB;
+    margin: 0;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 150px  1fr auto;
+    background-color: #512a2a;
+
+}
+
+nav{
+    grid-column: 3/4;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 40px;
+    z-index: 1;
+    padding-right: 25px;
+}
+
+nav a{
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+nav a:hover{
+    background-color: #F5DFBB;
+    color: #512a2a;
+}
+
+.logo{
+    width: 100px;
+    padding: 15px;
+}
+
+
+#hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr ;
+    margin-top: -100px;
+}
+
+#hero_img{
+    width: 100%;
+    opacity: .6;
+    z-index: -1;
+}
+
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#hero-msg h1{
+    color: #512a2a;
+    font-size: 35;
+    font-weight: bolder;
+}
+
+#hero-msg h4{
+    color: #512a2a;
+    font-size: 20px;
+}
+
+.book, .join{
+    background-color: #512a2a;
+    color: #f5dfbb;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 15px 30px;
+    margin-top: 75px;
+    border-radius: 5px;
+}
+.book:hover, .join:hover{
+    background-color: #f5dfbb;
+    color: #512a2a;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #512a2a;
+    color: #f5dfbb;
+    font-size: 30px;
+    padding: 10px;
+}
+
+footer a{
+    color: #F5DFBB;
+    text-decoration: underline;
+}
