@@ -14,38 +14,38 @@
                 <img class="logo" src="images/holmesHardware.jpg" alt="Holmes Hardware Logo">
             </a>
             <nav>
-                <a href = "index.html">Home</a>
-                <a href = "products.html">Products</a>
-                <a href = "contactus.html">Contact Us</a>
+                <a class ="active" href ="index.html">Home</a>
+                <a href ="products.html">Products</a>
+                <a href ="contactus.html">Contact Us</a>
             </nav>
         </header>
         <div id="hero">
             <div id="hero-box">
-                <img id="hero_img" src="images/heroImg.jpg" alt="Business Owners Mr. and Mrs. Holmes">
+                <img id="hero_img" src="images/heroImg.webp" alt="Business Owners Mr. and Mrs. Holmes">
             </div>
             <section id="hero-msg">
                 <h1 class="home_title">Have an Adventure</h1>
                 <h4>Add to your home with Holmes Hardware</h4>
                 <div class="button_box">
-                    <a class="book" href="contactUs.html">Request Piece</a>
+                    <a class="book" href="contactUs.html">Request Your Piece</a>
                 </div>
             </section>
         </div>
         <main class="home-grid">
             <section class="rivers-card">
-                <a><img class="card-img" src="images/rivers.jpg" alt="river in the forest"></a>
+                <a href="products.html"><img class="card-img" src="images/rivers.jpg" alt="Cornhole Board"></a>
                 <!-- <img class="icon" src="images/river_icon.png" alt="river_icon"> -->
                 <h2>Popular</h2>
             </section>
             <section class="camping-card">
-                <a><img class="card-img" src="images/camping.jpg" alt="tent in the mountains"></a>
+                <a href="products.html"><img class="card-img" src="images/camping.jpg" alt="tent in the mountains"></a>
                 <!-- <img class="icon" src="images/fire_icon.png" alt="fire icon"> -->
                 <h2>Newest</h2>
             </section>
             <section class="rapids-card">
-                <a><img class="card-img" src="images/rapids.jpg" alt="rafting boat"></a>
+                <a href="products.html"><img class="card-img" src="images/rapids.jpg" alt="rafting boat"></a>
                 <!-- <img class="icon" src="images/oars.png" alt="oars icon"> -->
-                <h2>Other Option</h2>
+                <h2>Other</h2>
             </section>
             <div id="background"></div>
             <img class="owners" src="images/owners.jpg" alt="Business Owners">
@@ -55,11 +55,11 @@
                     He pride's himself on a good job no matter who the customer is or how simple the project. Each project gets 
                     a piece of his heart and soul.
                 </p>
-                <a class="join" href="rivers.html">Join Us</a>
+                <a class="join" href="products.html">Request Your Piece</a>
             </section>    
         </main>
         <footer>
-            <p> Holmes Hardware &copy; 2023 - Michael Holmes</p>    <!-- replace with JS-->
+            <p id="copyrightYear"></p>    
             <p><a href="siteplan.html">Site Plan</a></p> 
             <p><a href="contactus.html">Contact Us</a></p>
             <div class="social">
@@ -76,5 +76,6 @@
 
         </footer>
     </div>
+    <script src="scripts/project.js" defer></script>
 </body>
 </html>

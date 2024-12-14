@@ -14,13 +14,41 @@
                 <img class="logo" src="images/holmesHardware.jpg" alt="Holmes Hardware Logo">
             </a>
             <nav>
-                <a href = "index.html">Home</a>
-                <a href = "products.html">Products</a>
-                <a href = "contactus.html">Contact Us</a>
+                <a href ="index.html">Home</a>
+                <a href ="products.html">Products</a>
+                <a class ="active" href ="contactus.html">Contact Us</a>
             </nav>
         </header>  
+        <main>
+            <form method="get" action="thanks.html" class="prf">
+                <fieldset>
+                    <legend>Your Info</legend>
+                    <label><strong>First Name*</strong><input type="text" name="fname" required></label>
+                    <label><strong>Last Name*</strong><input type="text" name="lname" required></label>
+                    <label><strong>Email*</strong><input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                    <label><strong>Phone:</strong><input type="tel" name="phone" placeholder="1235559876"></label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Product Info</legend>
+                    <div>
+                        <label>
+                            <select name="Product" id="productSelect" required>
+                                <option value="">Select a Product</option>
+                            </select>    
+                        </label>
+                    </div>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Info</legend>
+                    <label><strong>Leave us a Message!</strong><textarea name="comment"></textarea></label>
+                </fieldset>
+                <label><input type="submit" value="Request Your Piece" name="submitButton"></label>
+            </form>
+        </main>
         <footer>
-            <p> Holmes Hardware &copy; 2023 - Michael Holmes</p>    <!-- replace with JS-->
+            <p id="copyrightYear"></p>    
             <p><a href="siteplan.html">Site Plan</a></p> 
             <p><a href="contactus.html">Contact Us</a></p>
             <div class="social">
@@ -37,5 +65,6 @@
 
         </footer>
     </div>
+    <script src="scripts/project.js" defer></script>
 </body>
 </html>
