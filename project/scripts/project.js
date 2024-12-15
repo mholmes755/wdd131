@@ -19,7 +19,7 @@ const products = [
       productDescription: "This is a cornhole board",
       productionDate: "2022-05-15",
       amountPurchased: "3",
-      imageUrl:"images/facebook.png"
+      imageUrl:"images/cornhole.webp"
 
     },
     {
@@ -29,7 +29,7 @@ const products = [
         productDescription: "This is an end table",
         productionDate: "2020-12-12",
         amountPurchased: "4",
-        imageUrl:"images/facebook.png"
+        imageUrl:"images/endTable.webp"
   
     },
     {
@@ -39,37 +39,37 @@ const products = [
         productDescription: "This is a Jewelry Box",
         productionDate: "2021-03-17",
         amountPurchased: "5",
-        imageUrl:"images/facebook.png"
+        imageUrl:"images/jewelryBox.webp"
   
       },
       {
           id: "00004",
-          productName: "2024",
+          productName: "Coming Soon!",
           productPrice: "",
           productDescription: "This is BLANK",
           productionDate: "2024-01-25",
           amountPurchased: "10",
-          imageUrl:"images/facebook.png"
+          imageUrl:"images/holmesHardware.jpg"
     
         },
         {
             id: "00005",
-            productName: "2024",
+            productName: "Coming Soon!",
             productPrice: "",
             productDescription: "This is BLANK",
             productionDate: "2024-06-24",
             amountPurchased: "6",
-            imageUrl:"images/facebook.png"
+            imageUrl:"images/holmesHardware.jpg"
       
           },
           {
               id: "00006",
-              productName: "2024",
+              productName: "Coming Soon!",
               productPrice: "",
               productDescription: "This is BLANK",
               productionDate: "2024-09-27",
               amountPurchased: "7",
-              imageUrl:"images/facebook.png"
+              imageUrl:"images/holmesHardware.jpg"
         
             }
   ];
