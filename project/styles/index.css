@@ -109,17 +109,17 @@
     }
     
     
-    .rivers-card{
+    .cornhole-card{
         margin: 200px auto;
         grid-column: 2/4;
         grid-row: 2/3;
     }
-    .camping-card{
+    .endTable-card{
         margin: 200px auto;
         grid-column: 5/7;
         grid-row: 2/3;
     }
-    .rapids-card{
+    .jewelryBox-card{
         margin: 200px auto;
         grid-column: 8/10;
         grid-row: 2/3;
