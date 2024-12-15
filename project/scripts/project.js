@@ -77,8 +77,8 @@ const products = [
 
   // GENERATE PRODUCT CARDS ON PRODUCT PAGE
   function buildProducts(products){
-    const container = document.getElementById('productCards');
-    const html = products.map(
+    let container = document.getElementById('productCards');
+    let html = products.map(
         (product) => `
         <div class = "productCard">
             <div class"name">
@@ -98,6 +98,9 @@ const products = [
 
   }
 
+
+
+  
   buildProducts(products);
 
 
@@ -137,6 +140,21 @@ document.getElementById('sortBy').addEventListener('change', (event) => {
 });
 
 
+
+// JavaScript code to populate a select dropdown menu
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Define the dropdown menu and use the existing products array
+    const dropdown = document.getElementById('productSelect'); // Use the correct ID from your HTML
+
+    // Populate the dropdown menu with products
+    products.forEach(product => {
+        const optElement = document.createElement('option');
+        optElement.value = product.id;
+        optElement.textContent = product.productName;
+        dropdown.appendChild(optElement);
+    });
+});
 
 
 
